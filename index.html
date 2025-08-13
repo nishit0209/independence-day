@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#ff9933, white, #138808);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #000080;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .flag {
+            width: 200px;
+            animation: moveUpDown 2s infinite ease-in-out;
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .image-box {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: moveUpDown 3s infinite ease-in-out;
+        }
+
+        .text-box {
+            flex: 1 1 300px;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .text-box h2 {
+            color: #000080;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .text-box {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Indian Flag" class="flag">
+        <h1>Happy Independence Day</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.britannica.com/20/189820-050-D650A54D/Red-Fort-Old-Delhi-India.jpg" alt="Red Fort">
+        </div>
+
+        <div class="text-box">
+            <h2>About Independence Day</h2>
+            <p>
+                Independence Day in India is celebrated on 15th August every year to honor the nation's freedom from British rule in 1947.
+                The day is marked by the Prime Minister’s speech from the Red Fort, flag hoisting ceremonies, cultural programs, and parades.
+                Citizens across the country celebrate with patriotism, unity, and pride.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Independence Day Celebration | Designed with ❤ in India
+    </footer>
+</body>
+</html>
